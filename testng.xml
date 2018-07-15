@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Leaftaps">
+  <test  name="Create and Edit">
+    <classes>
+      <class name="lib.selenium.CreateLead"/>
+      <class name="tests.EditLead"/>
+    </classes>
+  </test> <!-- Create and Edit -->
+</suite> <!-- Leaftaps -->

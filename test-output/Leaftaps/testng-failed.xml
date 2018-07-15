@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Leaftaps]">
+  <test name="Create and Edit">
+    <classes>
+      <class name="lib.selenium.CreateLead"/>
+      <class name="tests.EditLead"/>
+    </classes>
+  </test> <!-- Create and Edit -->
+  <test name="Create and Edit(failed)">
+    <classes>
+      <class name="tests.EditLead">
+        <methods>
+          <include name="editLead"/>
+        </methods>
+      </class> <!-- tests.EditLead -->
+      <class name="lib.selenium.CreateLead">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- lib.selenium.CreateLead -->
+    </classes>
+  </test> <!-- Create and Edit(failed) -->
+</suite> <!-- Failed suite [Leaftaps] -->
